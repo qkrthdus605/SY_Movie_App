@@ -15,7 +15,9 @@ function Movie({year, title, summary, poster, genres}){
                         <li key={index} className="genres_genre">{genre}</li>
                     ))}
                 </ul>
-                <p className="summary">{summary}</p>
+                <div>
+                    <p className="summary">{summary}</p>
+                </div>
             </div>
         </div>
     );
