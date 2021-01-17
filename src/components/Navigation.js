@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navigation.css";
 
 function Navigation(){
     return(
-        <div>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+        <div className="nav">
+            <p><Link to="/" className="home">Home</Link></p>
+            <p><Link to="/about" className="about">About</Link></p>
         </div>
     ); 
 }

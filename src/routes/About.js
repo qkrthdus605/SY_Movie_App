@@ -1,7 +1,12 @@
 import React from "react";
+import "./About.css";
 
-function About(){
-    return <span>about movie...</span>
+function About(props){
+    return(
+        <div className="about_container">
+            <span>about movie...</span>
+        </div>
+    ); 
 }
 
 export default About;
