@@ -13,6 +13,7 @@ class Detail extends React.Component{
         if(location.state){
             return(
                 <div className="detail">
+                    <h2> About Movie</h2>
                     <img src={location.state.poster} className="de_image" />
                     <span className="de_title">{location.state.title}</span>
                     <span className="de_year">{location.state.year}</span>
