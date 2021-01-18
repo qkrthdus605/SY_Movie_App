@@ -65,8 +65,17 @@ render() {
                 </div> 
                 <div className="movies">
                      {movies.map(movie => (
-                          <SearchMovie key={movie.link} id={movie.link} year={movie.pubDate} title={movie.title} poster={movie.image} rating={movie.userRating} director={movie.director} actor={movie.actor}
-                           />))
+                          <SearchMovie 
+                            key={movie.link} 
+                            id={movie.link} 
+                            year={movie.pubDate} 
+                            title={movie.title} 
+                            genre={movie.genre}
+                            poster={movie.image} 
+                            rating={movie.userRating} 
+                            director={movie.director} 
+                            actor={movie.actor}
+                        />))
                             }
                          </div> 
                     </div> 
