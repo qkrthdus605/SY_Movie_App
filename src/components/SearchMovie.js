@@ -21,7 +21,7 @@ function SearchMovie({id, year, title, genre, poster, director, rating, actor}){
                     }
                 }}
             ></Link>
-            <a href={id} target="_blank">
+            <a href={id}>
                 <img scr={poster} alt={title} title={title}></img>
             <div className="movie_data">
                 <h2 className="movie_title">{title}</h2>

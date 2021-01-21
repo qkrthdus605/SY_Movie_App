@@ -1,6 +1,7 @@
 import React from 'react'; 
 import axios from 'axios'; 
 import SearchMovie from '../components/SearchMovie'; 
+import "./Search.css";
 
 
 class Search extends React.Component { 
@@ -20,7 +21,7 @@ getSearchMovie = async () => {
         } else {
              const {data: {
                   items 
-                }} = await axios.get('https://openapi.naver.com/v1/search/movie.json',{ 
+                }} = await axios.get("/v1/search/movie.json?query=title",{ 
                     params:{
                          query: search, 
                          display: 20 
@@ -60,8 +61,9 @@ render() {
         : (<form onSubmit={this.handleSubmit}> 
             <div> 
                 <div className="input_div"> 
-                    <h1>영화 검색</h1> 
+                    <h1>Searching Movie</h1> 
                     <input className="input_search" type="text" value={this.state.value} onChange={this.handleChange} placeholder="영화를 검색해 보세요."/> 
+                    <input className="search_button" type="button" value="submit" />
                 </div> 
                 <div className="movies">
                      {movies.map(movie => (
