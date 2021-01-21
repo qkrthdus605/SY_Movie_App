@@ -1,12 +1,11 @@
 .nav{
     width: 70px;
-    height: 80px;
-    background-color: white;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     border: white;
     margin: 20px;
     position: fixed;
-    margin-top: 20px;
 }
 
 .home{
@@ -15,12 +14,19 @@
     font-size: 20px;
     color: rgb(42, 85, 83);
     font-weight: 600;
-    line-height: 2px;
     margin-left: 5px;
-    margin-top: -3px;
+    padding-top: -10px;
 }
 
 .about{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(42, 85, 83);
+    font-weight: 600;
+    margin-left: 5px;
+}
+.search{
     position: relative;
     text-decoration: none;
     font-size: 20px;
