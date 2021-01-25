@@ -5,12 +5,14 @@
     background-color: black;
 }
 .input_div{
+    position: relative;
     font-size: 20px;
     font-weight: 300;
     color: white;
 }
 
 .input_search{
+    position: fixed;
     width: 400px;
     height: 40px;
     border: 1px solid black;

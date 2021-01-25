@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import "./SearchMovie.css";
 
 // 영화 정보 렌더링
 function SearchMovie({id, year, title, genre, poster, director, rating, actor}){
@@ -22,7 +23,7 @@ function SearchMovie({id, year, title, genre, poster, director, rating, actor}){
                 }}
             ></Link>
             <a href={id}>
-                <img scr={poster} alt={title} title={title}></img>
+                <img scr={poster} alt={title} title={title} />
             <div className="movie_data">
                 <h2 className="movie_title">{title}</h2>
                 <p className="movie_rating"><span>평점</span>{rating}/10</p>
@@ -42,6 +43,7 @@ SearchMovie.propTypes={
     title: PropTypes.string.isRequired,
     genre: PropTypes.string.isRequired,
     director: PropTypes.string.isRequired,
+    poster: PropTypes.string.isRequired,
     rating: PropTypes.string.isRequired,
     actor: PropTypes.string.isRequired
 };
