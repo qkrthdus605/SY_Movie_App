@@ -4,6 +4,7 @@ import About from "./routes/About";
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 import Search from "./routes/Search";
+import SearchContainer from "./Container/SearchContainer";
 import Navigation from "./components/Navigation";
 import "./App.css";
 
