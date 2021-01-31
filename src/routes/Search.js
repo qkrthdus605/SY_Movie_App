@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios'; 
 import SearchMovie from '../components/SearchMovie'; 
 import "./Search.css";
-
+import items from './item.json';
 
 class Search extends React.Component { 
     state = { 
