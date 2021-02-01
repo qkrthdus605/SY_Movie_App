@@ -1,10 +1,8 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
-import About from "./routes/About";
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 import Search from "./routes/Search";
-import SearchContainer from "./Container/SearchContainer";
 import Navigation from "./components/Navigation";
 import "./App.css";
 
@@ -14,7 +12,6 @@ function App(){
       <HashRouter>
         <Navigation />
         <Route path="/" exact={true} component={Home} />
-        <Route path="/about" component={About} />
         <Route path="/movie-detail" component={Detail} />
         <Route path="/search" component={Search} />
       </HashRouter>
