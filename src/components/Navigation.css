@@ -27,3 +27,13 @@
     line-height: 2px;
     margin-left: 5px;
 }
+
+.login{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(42, 85, 83);
+    font-weight: 600;
+    line-height: 2px;
+    margin-left: 5px;
+}
