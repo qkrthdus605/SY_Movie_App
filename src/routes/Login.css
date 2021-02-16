@@ -1,0 +1,22 @@
+.login{
+    display: flex;
+}
+
+.login-form{
+    align-items: center;
+}
+
+.user-ID{
+    width: 100px;
+    height: 30px
+}
+
+.user-PW{
+    width: 100px;
+    height: 30px;
+}
+
+.login-btn{
+    width: 50px;
+    height: 30px;
+}
